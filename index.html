@@ -285,15 +285,14 @@
 			body a:before { content: '{'; }
 			body a:after { content: '}'; }
 			body > ol { margin: 30px; padding: 0px 30px 30px; column-count: 3; display: block; border-bottom: 2px solid var(--color-beta); }
-			body > ol > li { padding-right: 30px; }
-			body > ol > li img { display: none; margin: 5px; max-width: 88px; height: auto; font-style: italic; overflow: hidden; }
+			body > ol > li { padding-right: 30px; page-break-inside: avoid;}
+			body > ol > li img { display: block; margin: 5px; max-width: 88px; height: auto; font-style: italic; overflow: hidden; }
 			body > ol > li a:visited:before, body > ol > li a:visited:after { color: var(--color-alpha); }
             body > div > ul > li, body > div > ol> li {color: var(--color-beta);}
 			body > footer { margin: 30px; }
 			body > footer > p { max-width: 600px; }
 			body > footer > p span.hide { display: none; }
 			body > footer > img { display: inline-block; width: 100px; height: auto; margin-bottom: 30px; }
-			body > ol > li > img { display:block; }
 			body > ol > li:target a { color: var(--color-alpha); }
 			body > ol > li:target { background: var(--color-beta); }
 			@media screen and (max-width: 800px) { body > ol { column-count: 2; } }
