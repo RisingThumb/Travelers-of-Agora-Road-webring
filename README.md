@@ -11,7 +11,7 @@
 <img src="https://risingthumb.github.io/Travelers-of-Agora-Road-webring/img/traveller.png" />
 </a>
 ```
-Feel free to includ elinks to your webring neighbours
+Feel free to include links to your webring neighbours
 
 ## How can I join?
 
