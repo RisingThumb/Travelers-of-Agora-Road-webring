@@ -6,4 +6,4 @@ for (const image of images) {
         image.alt = "This site is offline"
     })
 }
-console.log(images)
+
