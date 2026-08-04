@@ -39,7 +39,7 @@ body footer a {
     text-decoration: none;
 }
 
-body a:hover {
+body a:hover, body a:active {
     background-color: var(--color-beta);
     color: var(--color-alpha);
 }
