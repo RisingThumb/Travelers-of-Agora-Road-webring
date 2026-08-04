@@ -63,8 +63,6 @@ main > ol {
 }
 
 main > ol > li {
-    page-break-inside: avoid;
-    break-inside: avoid;
     padding: 0;
     max-width: 250px;
 }
