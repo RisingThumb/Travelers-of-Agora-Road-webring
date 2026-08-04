@@ -59,13 +59,14 @@ main > ol {
     column-gap: 30px;
     border-bottom: 2px solid var(--color-beta);
     padding-bottom: 30px;
+    min-width: 800px;
 }
 
 main > ol > li {
     page-break-inside: avoid;
     break-inside: avoid;
     padding: 0;
-    max-width: 205px;
+    max-width: 250px;
 }
 
 main > ol > li img {
@@ -119,12 +120,13 @@ main {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
     main > ol {
         grid-template-columns: 50% 50%;
         gap: 0;
         width: 600px;
         padding-left: 0;
+        min-width: 0;
     }
 
     main > ol > li {
@@ -140,11 +142,11 @@ main {
     }
 
     main > ol > li img {
-        margin: 5px auto 10px auto;
+        margin: 5px auto 15px auto;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     main > ol {
         grid-template-columns: 100%;
     }
