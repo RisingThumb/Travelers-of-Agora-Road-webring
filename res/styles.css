@@ -39,7 +39,7 @@ body footer a {
     text-decoration: none;
 }
 
-body a:hover {
+body a:hover, body a:active {
     background-color: var(--color-beta);
     color: var(--color-alpha);
 }
@@ -53,17 +53,18 @@ body a:after {
 }
 
 main > ol {
-    margin: 30px;
-    padding: 0px 30px 30px;
-    column-count: 3;
-    display: block;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 10px;
+    column-gap: 30px;
     border-bottom: 2px solid var(--color-beta);
+    padding-bottom: 30px;
+    min-width: 800px;
 }
 
 main > ol > li {
-    padding-right: 30px;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    padding: 0;
+    max-width: 250px;
 }
 
 main > ol > li img {
@@ -110,15 +111,56 @@ body > ol > li:target {
     background: var(--color-beta);
 }
 
-@media screen and (max-width: 800px) {
-    body > ol {
-        column-count: 2;
+main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 820px) {
+    main > ol {
+        grid-template-columns: 50% 50%;
+        gap: 0;
+        width: 600px;
+        padding-left: 0;
+        min-width: 0;
+    }
+
+    main > ol > li {
+        width: 200px;
+        white-space: wrap;
+        overflow-wrap: break-word;
+        text-align: center;
+    }
+
+    ol > li {
+        justify-self: center;
+        align-self: center;
+    }
+
+    main > ol > li img {
+        margin: 5px auto 15px auto;
     }
 }
 
-@media screen and (max-width: 600px) {
-    body > ol {
-        column-count: 1;
+@media screen and (max-width: 550px) {
+    main > ol {
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main > ol > li {
+        white-space: wrap;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    main > ol > li {
+        white-space: wrap;
+        width: 100px;
     }
 }
 
